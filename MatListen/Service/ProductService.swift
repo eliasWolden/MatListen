@@ -19,9 +19,21 @@ struct Meta: Codable {
     let total: Int?
 }
 
+
+struct Config {
+    static var apiKey: String {
+        guard let filePath = Bundle.main.path(forResource: "API-Keys", ofType: "plist"),
+              let plist = NSDictionary(contentsOfFile: filePath),
+              let key = plist["PRODUCT_API_KEY"] as? String else {
+            fatalError("Couldn't find key 'API_KEY' in 'Config.plist'.")
+        }
+        return key
+    }
+}
+
 class ApiService {
     private let baseUrl = "https://kassal.app/api/v1/products"
-    private let token = "PRODUCT_API_KEY"
+    private let token = Config.apiKey
 
     func fetchProducts(searchQuery: String, page: Int = 1, completion: @escaping (Result<[GroupedItem], Error>) -> Void) {
         guard var components = URLComponents(string: baseUrl) else {

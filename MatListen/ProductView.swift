@@ -64,6 +64,7 @@ struct ProductView: View {
                 .background(Color.customBackground)
                 .zIndex(10)
             }
+            .background(Color.gray)  // Add grey background to the entire view
         }
     }
 

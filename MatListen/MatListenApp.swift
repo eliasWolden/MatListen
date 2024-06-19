@@ -16,3 +16,9 @@ struct MatListenApp: App {
         }
     }
 }
+
+struct MatListenApp_Previews: PreviewProvider {
+    static var previews: some View {
+        TabBarView()
+    }
+}

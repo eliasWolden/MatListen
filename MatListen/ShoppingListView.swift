@@ -94,3 +94,4 @@ struct EmptyListView: View {
             .listItemStyle(backgroundColor: .listItemBackground, textColor: .BlackTextColor)
     }
 }
+

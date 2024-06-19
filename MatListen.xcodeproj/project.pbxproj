@@ -45,6 +45,8 @@
 		24960AAE2C2309530038927C /* Poppins-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24960A9A2C2309530038927C /* Poppins-SemiBoldItalic.ttf */; };
 		24960AAF2C2309530038927C /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24960A9B2C2309530038927C /* Poppins-Thin.ttf */; };
 		24960AB02C2309530038927C /* Poppins-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24960A9C2C2309530038927C /* Poppins-ThinItalic.ttf */; };
+		24A4A8712C232C250045C8EB /* API-Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24A4A8702C232C250045C8EB /* API-Keys.plist */; };
+		24A4A8732C233E510045C8EB /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 24A4A8722C233E510045C8EB /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +89,8 @@
 		24960A9A2C2309530038927C /* Poppins-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		24960A9B2C2309530038927C /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
 		24960A9C2C2309530038927C /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
+		24A4A8702C232C250045C8EB /* API-Keys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "API-Keys.plist"; sourceTree = "<group>"; };
+		24A4A8722C233E510045C8EB /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 		24960A482C23048E0038927C = {
 			isa = PBXGroup;
 			children = (
+				24A4A8722C233E510045C8EB /* .gitignore */,
 				24960A532C23048E0038927C /* MatListen */,
 				24960A522C23048E0038927C /* Products */,
 			);
@@ -119,6 +124,7 @@
 		24960A532C23048E0038927C /* MatListen */ = {
 			isa = PBXGroup;
 			children = (
+				24A4A8702C232C250045C8EB /* API-Keys.plist */,
 				24960A542C23048E0038927C /* MatListenApp.swift */,
 				24960A652C2304B50038927C /* Modifiers */,
 				24960A662C2304BB0038927C /* Components */,
@@ -285,9 +291,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				24960AA52C2309530038927C /* Poppins-ExtraLight.ttf in Resources */,
+				24A4A8712C232C250045C8EB /* API-Keys.plist in Resources */,
 				24960AAE2C2309530038927C /* Poppins-SemiBoldItalic.ttf in Resources */,
 				24960AAB2C2309530038927C /* Poppins-MediumItalic.ttf in Resources */,
 				24960AA82C2309530038927C /* Poppins-Light.ttf in Resources */,
+				24A4A8732C233E510045C8EB /* .gitignore in Resources */,
 				24960A9F2C2309530038927C /* Poppins-Black.ttf in Resources */,
 				24960AA12C2309530038927C /* Poppins-Bold.ttf in Resources */,
 				24960AAC2C2309530038927C /* Poppins-Regular.ttf in Resources */,

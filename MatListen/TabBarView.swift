@@ -48,7 +48,7 @@ struct TabBarView: View {
                 .onAppear {
                     let tabBarAppearance = UITabBarAppearance()
                     tabBarAppearance.configureWithOpaqueBackground()
-                    tabBarAppearance.backgroundColor = UIColor.gray
+                    tabBarAppearance.backgroundColor = UIColor.navBarBackground
                     UITabBar.appearance().standardAppearance = tabBarAppearance
                     UITabBar.appearance().scrollEdgeAppearance = tabBarAppearance
                 }

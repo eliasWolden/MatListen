@@ -7,6 +7,8 @@
 
 import Foundation
 import SwiftUI
+
+// Color extension for SwiftUI Color
 extension Color {
     static let customBackground = Color(hex: "#1A6025")
     static let listItemBackground = Color(hex: "#FCFFFC")
@@ -14,10 +16,6 @@ extension Color {
     static let navBarIconColor = Color(hex: "#2BA84A")
     static let navBarBackground = Color(hex: "#232F2F")
 
-
-}
-
-extension Color {
     init(hex: String) {
         let hex = hex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
         var int = UInt64()
@@ -41,7 +39,11 @@ extension Color {
         )
     }
 }
+
+// UIColor extension for UIKit UIColor
 extension UIColor {
+    static let navBarBackground = UIColor(hex: "#232F2F")
+
     convenience init(hex: String) {
         let hex = hex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
         var int = UInt64()
