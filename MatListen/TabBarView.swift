@@ -1,12 +1,12 @@
 //
-//  ContentView.swift
+//  TabBarView.swift
 //  MatListen
 //
 //  Created by Elias Wolden on 19/06/2024.
 //
-/*
+
+import Foundation
 import SwiftUI
-import SwiftData
 
 struct TabBarView: View {
     @State private var selectedTab = 1
@@ -72,8 +72,3 @@ struct TabBarView: View {
         }
     }
 }
-
-#Preview {
-    TabBarView()
-}
-*/
