@@ -9,20 +9,21 @@ import Foundation
 import SwiftUI
 
 struct TabBarView: View {
-    @State private var selectedTab = 1
+    @State private var selectedTab = 0
     @State private var shoppingList: [Item] = []
+    @Binding var user: User
 
     var body: some View {
         GeometryReader { geometry in
             VStack {
                 TabView(selection: $selectedTab) {
-                    HouseHoldView(shoppingList: $shoppingList)
+                    HouseholdView(shoppingList: $shoppingList, user: $user)
                         .tabItem {
                             iconView(name: "home-icon", isSelected: selectedTab == 0)
                         }
                         .tag(0)
                         .frame(width: geometry.size.width, height: geometry.size.height - 50)
-
+                    
                     ProductView(shoppingList: $shoppingList)
                         .tabItem {
                             iconView(name: "search-icon", isSelected: selectedTab == 1)
@@ -55,8 +56,8 @@ struct TabBarView: View {
                 Spacer()
                     .frame(height: 20)
             }
+            .edgesIgnoringSafeArea(.bottom)
         }
-        .edgesIgnoringSafeArea(.bottom)
     }
     
     private func iconView(name: String, isSelected: Bool) -> some View {

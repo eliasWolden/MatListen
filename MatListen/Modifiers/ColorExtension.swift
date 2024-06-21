@@ -14,7 +14,7 @@ extension Color {
     static let listItemBackground = Color(hex: "#FCFFFC")
     static let BlackTextColor = Color(hex: "#040F0F")
     static let navBarIconColor = Color(hex: "#2BA84A")
-    static let navBarBackground = Color(hex: "#232F2F")
+    static let navBarBackground = Color(hex: "#FCFFFC")
 
     init(hex: String) {
         let hex = hex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
@@ -42,7 +42,7 @@ extension Color {
 
 // UIColor extension for UIKit UIColor
 extension UIColor {
-    static let navBarBackground = UIColor(hex: "#232F2F")
+    static let navBarBackground = UIColor(hex: "#FCFFFC")
 
     convenience init(hex: String) {
         let hex = hex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)

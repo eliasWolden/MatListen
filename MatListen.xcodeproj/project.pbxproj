@@ -45,8 +45,15 @@
 		24960AAE2C2309530038927C /* Poppins-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24960A9A2C2309530038927C /* Poppins-SemiBoldItalic.ttf */; };
 		24960AAF2C2309530038927C /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24960A9B2C2309530038927C /* Poppins-Thin.ttf */; };
 		24960AB02C2309530038927C /* Poppins-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24960A9C2C2309530038927C /* Poppins-ThinItalic.ttf */; };
+		24987A982C24555700B9C01D /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24987A972C24555700B9C01D /* UserService.swift */; };
+		24987A9A2C24620B00B9C01D /* HouseHoldService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24987A992C24620B00B9C01D /* HouseHoldService.swift */; };
+		24987A9C2C24896400B9C01D /* HouseHoldCrudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24987A9B2C24896400B9C01D /* HouseHoldCrudView.swift */; };
 		24A4A8712C232C250045C8EB /* API-Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24A4A8702C232C250045C8EB /* API-Keys.plist */; };
 		24A4A8732C233E510045C8EB /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 24A4A8722C233E510045C8EB /* .gitignore */; };
+		24A4A8782C2342A40045C8EB /* UserList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A4A8772C2342A40045C8EB /* UserList.swift */; };
+		24A4A87A2C2342F90045C8EB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A4A8792C2342F90045C8EB /* User.swift */; };
+		24A4A87D2C2355400045C8EB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A4A87C2C2355400045C8EB /* LoginView.swift */; };
+		24AF40922C24B8B900136757 /* HouseHoldMembersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AF40912C24B8B900136757 /* HouseHoldMembersViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,8 +96,15 @@
 		24960A9A2C2309530038927C /* Poppins-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		24960A9B2C2309530038927C /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
 		24960A9C2C2309530038927C /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
+		24987A972C24555700B9C01D /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		24987A992C24620B00B9C01D /* HouseHoldService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseHoldService.swift; sourceTree = "<group>"; };
+		24987A9B2C24896400B9C01D /* HouseHoldCrudView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseHoldCrudView.swift; sourceTree = "<group>"; };
 		24A4A8702C232C250045C8EB /* API-Keys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "API-Keys.plist"; sourceTree = "<group>"; };
 		24A4A8722C233E510045C8EB /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		24A4A8772C2342A40045C8EB /* UserList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserList.swift; sourceTree = "<group>"; };
+		24A4A8792C2342F90045C8EB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		24A4A87C2C2355400045C8EB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		24AF40912C24B8B900136757 /* HouseHoldMembersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseHoldMembersViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,11 +140,12 @@
 			children = (
 				24A4A8702C232C250045C8EB /* API-Keys.plist */,
 				24960A542C23048E0038927C /* MatListenApp.swift */,
+				24AF40912C24B8B900136757 /* HouseHoldMembersViewModel.swift */,
 				24960A652C2304B50038927C /* Modifiers */,
 				24960A662C2304BB0038927C /* Components */,
 				24960A882C2308200038927C /* Views */,
 				24960A682C2304D50038927C /* Service */,
-				24960A582C23048E0038927C /* Item.swift */,
+				24A4A87B2C2342FE0045C8EB /* Items */,
 				24960A692C2304E20038927C /* Fonts */,
 				24960A5A2C2304900038927C /* Assets.xcassets */,
 				24960A5C2C2304900038927C /* Preview Content */,
@@ -160,6 +175,7 @@
 		24960A662C2304BB0038927C /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				24A4A8742C2342800045C8EB /* Home */,
 				24960A672C2304CE0038927C /* Product */,
 			);
 			path = Components;
@@ -179,6 +195,8 @@
 			isa = PBXGroup;
 			children = (
 				24960A762C2305E10038927C /* ProductService.swift */,
+				24987A992C24620B00B9C01D /* HouseHoldService.swift */,
+				24987A972C24555700B9C01D /* UserService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -194,7 +212,9 @@
 		24960A882C2308200038927C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				24987A9B2C24896400B9C01D /* HouseHoldCrudView.swift */,
 				24960A862C2307E20038927C /* TabBarView.swift */,
+				24A4A87C2C2355400045C8EB /* LoginView.swift */,
 				24960A6A2C2305500038927C /* HomeView.swift */,
 				24960A6C2C2305690038927C /* ShoppingListView.swift */,
 				24960A6E2C23057D0038927C /* NutritionView.swift */,
@@ -230,6 +250,23 @@
 			);
 			name = Poppins;
 			path = "../../../../ios koding assets/Poppins";
+			sourceTree = "<group>";
+		};
+		24A4A8742C2342800045C8EB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				24A4A8772C2342A40045C8EB /* UserList.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		24A4A87B2C2342FE0045C8EB /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				24960A582C23048E0038927C /* Item.swift */,
+				24A4A8792C2342F90045C8EB /* User.swift */,
+			);
+			path = Items;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,21 +361,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				24960A812C2306490038927C /* BackgroundModifier.swift in Sources */,
+				24AF40922C24B8B900136757 /* HouseHoldMembersViewModel.swift in Sources */,
 				24960A7F2C2306340038927C /* FontModifier.swift in Sources */,
 				24960A832C2306690038927C /* ColorExtension.swift in Sources */,
 				24960A852C2306760038927C /* ListItemModifier.swift in Sources */,
 				24960A592C23048E0038927C /* Item.swift in Sources */,
 				24960A6B2C2305500038927C /* HomeView.swift in Sources */,
+				24987A9C2C24896400B9C01D /* HouseHoldCrudView.swift in Sources */,
+				24987A982C24555700B9C01D /* UserService.swift in Sources */,
 				24960A732C2305AF0038927C /* ProductView.swift in Sources */,
 				24960A7D2C2306190038927C /* ProductItemView.swift in Sources */,
+				24A4A87A2C2342F90045C8EB /* User.swift in Sources */,
 				24960A752C2305BF0038927C /* ProductSelectionView.swift in Sources */,
 				24960A6F2C23057D0038927C /* NutritionView.swift in Sources */,
 				24960A552C23048E0038927C /* MatListenApp.swift in Sources */,
 				24960A7B2C23060A0038927C /* ProductGrid.swift in Sources */,
+				24987A9A2C24620B00B9C01D /* HouseHoldService.swift in Sources */,
 				24960A872C2307E20038927C /* TabBarView.swift in Sources */,
+				24A4A87D2C2355400045C8EB /* LoginView.swift in Sources */,
 				24960A6D2C2305690038927C /* ShoppingListView.swift in Sources */,
 				24960A712C2305910038927C /* NotificationsView.swift in Sources */,
 				24960A792C2305F70038927C /* SearchBar.swift in Sources */,
+				24A4A8782C2342A40045C8EB /* UserList.swift in Sources */,
 				24960A772C2305E10038927C /* ProductService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

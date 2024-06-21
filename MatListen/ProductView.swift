@@ -26,45 +26,43 @@ struct ProductView: View {
 
     var body: some View {
         NavigationView {
-            ZStack(alignment: .top) {
+            VStack {
                 VStack {
-                    Spacer().frame(height: 120)
-
-                    ProductGrid(
-                        groupedProducts: groupedProducts,
-                        columns: columns,
-                        onProductSelect: selectGroup,
-                        onLoadMore: loadMoreProducts,
-                        isFetchingMore: isFetchingMore
-                    )
-                }
-
-                if showModal, let group = selectedGroup {
-                    ProductSelectionPopup(group: group, addToShoppingList: addToShoppingList) {
-                        showModal = false
+                    VStack {
+                        Text("Produkter")
+                            .customFont(size: 30, weight: .thin)
                     }
-                    .zIndex(1)
-                }
+                    .frame(maxWidth: .infinity)
+                    .background(Color.white)
+                    
+                    VStack {
+                        Text("Søk etter vare")
+                            .foregroundColor(.white)
+                            .frame(maxWidth: .infinity)
+                            .customFont(size: 30, weight: .thin)
 
-                VStack {
-                    Text("Søk etter vare")
-                        .foregroundColor(.white)
-                        .frame(maxWidth: .infinity)
-                        .padding()
-                        .customFont(size: 24, weight: .bold)
-                        .background(Color.customBackground)
+                        SearchBar(searchQuery: $searchQuery, onCommit: searchProducts, onTap: clearSearch)
+                            .onChange(of: searchQuery) {
+                                searchProducts()
+                            }
+                    }
+                    .frame(maxWidth: .infinity)
+                    .zIndex(10)
+                    
+                    Spacer()
 
-                    SearchBar(searchQuery: $searchQuery, onCommit: searchProducts, onTap: clearSearch)
-                        .background(Color.customBackground)
-                        .onChange(of: searchQuery) {
-                            searchProducts()
-                        }
+                    ZStack {
+                        ProductGrid(
+                            groupedProducts: groupedProducts,
+                            columns: columns,
+                            onLoadMore: loadMoreProducts,
+                            isFetchingMore: isFetchingMore
+                        )
+                        
+                    }
                 }
-                .frame(maxWidth: .infinity)
-                .background(Color.customBackground)
-                .zIndex(10)
             }
-            .background(Color.gray)  // Add grey background to the entire view
+            .background(Color(.systemGray6))
         }
     }
 

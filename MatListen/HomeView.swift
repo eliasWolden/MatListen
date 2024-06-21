@@ -1,29 +1,43 @@
-//
-//  HomeView.swift
-//  MatListen
-//
-//  Created by Elias Wolden on 19/06/2024.
-//
-
-import Foundation
 import SwiftUI
 
-struct HouseHoldView: View {
+struct HouseholdView: View {
     @Binding var shoppingList: [Item]
+    @Binding var user: User
     
     var body: some View {
-        VStack {
-            HStack {
-                Text("Household Overview")
-                    .customFont(size: 24, weight: .thin)
-                    .foregroundColor(.white)
-                    .padding()
+        NavigationView {
+            VStack {
+                VStack {
+                    VStack {
+                        Text("Household")
+                            .customFont(size: 30, weight: .thin)
+                            .padding()
+                        HStack  {
+                            Spacer(minLength: 320)
+                            NavigationLink(destination: HouseHoldCrudView(user: $user)) {
+                                Image("white-gear-icon")
+                                    .resizable()
+                                    .frame(width: 30, height: 30)
+                                    .padding()
+                            }
+                        }
+                        .frame(maxWidth: .infinity, maxHeight: .none)
+                        .backgroundColor(Color.white)                    }
+                }
+                .frame(maxWidth: .infinity, maxHeight: .none)
+                .backgroundColor(Color.white)
+
+                Spacer()
+
+                HouseholdList(user: $user)
                 
+                Spacer()
+
+                ShoppingListView(shoppingList: $shoppingList)
+                
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
             }
-            ShoppingListView(shoppingList: $shoppingList)
+            .background(Color(.systemGray6))
         }
-        .navigationTitle("HouseHold")
-        .customFont(size: 16)
-        .backgroundColor(.customBackground)
     }
 }

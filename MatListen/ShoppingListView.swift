@@ -33,11 +33,12 @@ struct ShoppingListView: View {
                             TotalPriceView(totalPrice: totalPrice)
                         }
                     } else {
-                        EmptyListView()
+                        List{
+                            EmptyListView()
+                        }
                     }
                 }
             }
-            .backgroundColor(.customBackground)
         }
     }
 }
@@ -89,9 +90,13 @@ struct TotalPriceView: View {
 
 struct EmptyListView: View {
     var body: some View {
-        Text("Handlelisten er tom trykk på + for å legge til varer")
-            .customFont(size: 20, weight: .regular)
-            .listItemStyle(backgroundColor: .listItemBackground, textColor: .BlackTextColor)
+        VStack {
+            HStack {
+                Text("Handlelisten er tom")
+                    .customFont(size: 20, weight: .thin)
+                    .listItemStyle(backgroundColor: .listItemBackground, textColor: .BlackTextColor)
+            }
+        }
     }
 }
 
